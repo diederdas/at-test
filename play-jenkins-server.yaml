@@ -17,7 +17,8 @@
         name: ntp
         state: present
 
-    - timezone: name="{{ timezone }}"
+#Not supported by ansible tower :((
+#    - timezone: name="{{ timezone }}"
 
     - filesystem: fstype=ext4 dev=/dev/xvdf
 
